@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  display: flex;
+  flex-direction: row; /* Display contents horizontally */
+  background-color: #f7f7f7; /* Background color for the login container */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.image-container {
+  flex: 1; /* Take up 50% of the container width */
+  background-image: url("./6888600.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+.form-container {
+  flex: 1; /* Take up 50% of the container width */
+  /* padding: 0 250px; */
+  height: 100vh;
+}
+
+.logoImage {
+  text-align: center;
+}
+.logo {
+  width: 100px; /* Adjust the logo size as needed */
+  height: auto;
+}
+
+.login-dropDown button {
+  background-color: white;
+  width: 100%;
+  color: rgb(106, 106, 106);
+  text-align: left;
+}
+
+.formElement {
+  padding: 0 150px;
+}
+
+.form-container div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  border-color: #454545;
+}
