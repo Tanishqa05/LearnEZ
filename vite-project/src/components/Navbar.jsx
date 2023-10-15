@@ -20,7 +20,12 @@ export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar expand="lg" light bgColor="light">
+    <MDBNavbar
+      expand="lg"
+      light
+      bgColor="light"
+      className="mt-4 mx-4 px-5 rounded-pill"
+    >
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">
           <img src="Logo.png" alt="LearnEZ" srcset="" />
@@ -36,19 +41,35 @@ export default function Navbar() {
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showBasic} className="justify-content-center">
-          <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
+          <MDBNavbarNav className="mr-auto mb-2 mb-lg-0 justify-content-center">
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink
+                active
+                aria-current="page"
+                href="#"
+                className="mx-2"
+              >
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
-                Course
-              </MDBNavbarLink>
+              <MDBDropdown>
+                <MDBDropdownToggle tag="a" className="btn btn-primary">
+                  Courses
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link>All Courses</MDBDropdownItem>
+                  <MDBDropdownItem link>Create Course</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink
+                active
+                aria-current="page"
+                href="#"
+                className="mx-2"
+              >
                 Contact Us
               </MDBNavbarLink>
             </MDBNavbarItem>

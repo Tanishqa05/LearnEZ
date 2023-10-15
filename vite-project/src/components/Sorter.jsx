@@ -8,7 +8,7 @@ import {
 
 export default function Sorter() {
   return (
-    <MDBListGroup light style={{ background: "white" }}>
+    <MDBListGroup light style={{ background: "white" }} className="mt-4">
       <MDBListGroupItem className="border-0">
         <MDBRadio
           name="radioNoLabel"
